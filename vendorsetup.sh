@@ -1,7 +1,4 @@
-add_lunch_combo poly_d2att-userdebug
-add_lunch_combo poly_find5-userdebug
-add_lunch_combo poly_m7ul-userdebug
-add_lunch_combo poly_m7att-userdebug
-add_lunch_combo poly_mako-userdebug
-add_lunch_combo poly_quincyatt-userdebug
-add_lunch_combo poly_t0lteatt-userdebug
+for combo in $(curl -s https://raw.github.com/CyanogenMod/hudson/master/cm-build-targets | sed -e 's/#.*$//' | grep cm-10.1 | awk {'print $1'})
+do
+    add_lunch_combo $combo
+done
