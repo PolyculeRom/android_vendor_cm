@@ -5,3 +5,4 @@ add_lunch_combo poly_m7att-userdebug
 add_lunch_combo poly_mako-userdebug
 add_lunch_combo poly_quincyatt-userdebug
 add_lunch_combo poly_t0lteatt-userdebug
+add_lunch_combo poly_tf201-userdebug
